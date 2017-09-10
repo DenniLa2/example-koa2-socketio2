@@ -1,0 +1,16 @@
+<div class="rooms-component">
+  <h4>Channels:</h4>
+  <div ng-class="{selected: room.id == $ctrl.rooms.selected.id}"
+       ng-repeat="room in $ctrl.rooms.data"
+       ng-click="$ctrl.rooms.onSelectRoom(room)">
+    {{room.name}}
+  </div>
+
+  <h4>Users:</h4>
+  <div ng-class="{selected: room.id == $ctrl.rooms.selected.id}"
+       ng-repeat="room in $ctrl.rooms.users"
+       ng-click="$ctrl.rooms.onSelectUser(room)">
+    {{room.login}}
+  </div>
+
+</div>

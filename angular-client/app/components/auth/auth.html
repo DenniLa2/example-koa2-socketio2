@@ -1,0 +1,9 @@
+<div class="auth-component">
+  <span ng-if="!$ctrl.logged">Login as <input type="text" ng-model="$ctrl.login">
+    <button ng-disabled="$ctrl.login.length == 0 || $ctrl.logging" ng-click="$ctrl.onLogin()">Login</button>
+  </span>
+
+  <span ng-if="$ctrl.logged">Logged as {{$ctrl.login}}
+    <button ng-click="$ctrl.onLogout()">Logout</button>
+  </span>
+</div>
