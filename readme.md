@@ -1,4 +1,4 @@
-# sockets.io 2.0.3 on koa2
+# socket.io 2.0.3 on koa2
 
     $ npm i
     $ npm start
