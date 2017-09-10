@@ -5,11 +5,11 @@
 
 angular.module('app')
   .factory('NewsF', function ($rootScope) {
-    /*const news = io('http://localhost:3000/news');
+    const news = io('http://localhost:3000/news');
 
     news.on('news', function (data) {
       $rootScope.$broadcast('news', data)
-    });*/
+    });
 
     return {}
   });

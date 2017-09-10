@@ -82,7 +82,7 @@ io.on('connection', socket => {
   //console.log(' ---> connected', socket.request);
   //console.log(' ---> connected', socket.handshake);
   io.clients((error, clients) => {
-    console.log(' - clients --> ', clients);
+    //console.log(' - clients --> ', clients);
   });
 
   //io.in(socket.id).emit('chat message', { msg: `hi, ${socket.id}` });
@@ -103,7 +103,7 @@ io.on('connection', socket => {
     const receiver = response.room;
     response.sender = _clients.getSender(sender);
     const isPrivate = _clients.check(receiver);
-    console.log(' ---> response: ', response);
+    //console.log(' ---> response: ', response);
 
 
     if (response.room === 'common')
